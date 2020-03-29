@@ -1,0 +1,42 @@
+
+/**
+ * Rota/ Recurso
+ */
+
+/**
+ * Métodos HTTP:
+ * 
+ * GET: Buscar/Listar informações do back-end
+ * POST: Criar uma informação no back-end
+ * PUT: Alterar uma informação no back-end
+ * DELETE: Deletar uma informação no back-end
+ */
+
+/**
+ * Tipos de parâmetros:
+ * 
+ * Query Params: Parâmetros nomeados enviados na rota após "?"(Filtros,paginação) localhost:3333/users/name=Rafael
+ * Route Params: Parâmetros utilizados para identificar recursos (localhost:3333/users/1)
+ * Request Body: Corpo da requisição, utilizado para criar ou alterar recurso
+ */
+
+ /**
+ * ENTIDADES:
+ - ONG
+ - Casos
+
+ *FUNCIONALIDADES:
+ - Login da ONG
+ - Logout da ONG
+ - Cadastro da ONG
+ - Cadastrar novos Casos
+ - Deletar Casos
+ - Listar todos os Casos
+ - Listar casos específicos de uma ONG
+ - Entrar em contato com a ONG
+ */
+ Criar a migrate:
+ npx knex migrate:make nomedamigrate
+
+ Criar a tabela:
+ npx knex migrate:latest
